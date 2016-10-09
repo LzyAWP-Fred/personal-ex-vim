@@ -2,16 +2,17 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 execute pathogen#infect()
 
+"""插件开启"""""""""""""""""""
 Bundle 'gmarik/vundle'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'Valloric/ListToggle'
 Bundle 'scrooloose/syntastic'
-Bundle 'bling/vim-airline'
+"Bundle 'bling/vim-airline'
 Bundle 'Yggdroot/indentLine'
 let g:jedi#auto_initialization = 1
-
+Plugin 'vim-airline/vim-airline'
+""""""""""""""""""""""""""""""
 filetype plugin indent on
-
 
 "YouCompleteMe""""""""""""""""""""""""""""""""""""""""""""""
 let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
@@ -138,3 +139,12 @@ let g:indentLine_enabled = 1
 set nocompatible
 filetype plugin on
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+"""VIM airline""""""""""""""""""""""""""""""""
+let g:airline_powerline_fonts = 1
+Plugin 'vim-airline/vim-airline-themes'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+"""""""""""""""""""""""""""""""""""""""""""""""
