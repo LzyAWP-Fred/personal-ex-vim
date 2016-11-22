@@ -9,5 +9,4 @@ Beginning in 2015.
 
 Personal Vim configuration. Need about 5 more years to improve it. ^_^
 
-2016-11-22 05-35-52.png
 ![img](https://github.com/LzyAWP-Fred/personal-ex-vim/blob/master/2016-11-22%2005-35-52.png)
