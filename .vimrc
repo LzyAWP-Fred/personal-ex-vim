@@ -7,12 +7,14 @@ Bundle 'gmarik/vundle'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'Valloric/ListToggle'
 Bundle 'scrooloose/syntastic'
-"Bundle 'bling/vim-airline'
 Bundle 'Yggdroot/indentLine'
 let g:jedi#auto_initialization = 1
-Plugin 'vim-airline/vim-airline'
 """"""""""""""""""""""""""""""
 filetype plugin indent on
+let g:pydiction_location = '/path/to/complete-dict'
+set t_Co=256
+set laststatus=2
+set encoding=utf-8
 
 "YouCompleteMe""""""""""""""""""""""""""""""""""""""""""""""
 let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
@@ -37,7 +39,7 @@ set cindent
 set cinoptions=>4,n-2,{2,^-2,:2,=2,g0,h2,p5,t0,+2,(0,u0,w1,m1
 set shiftwidth=2
 set softtabstop=2
-set textwidth=79
+"set textwidth=79
 set fo-=ro fo+=cql
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -142,9 +144,15 @@ filetype plugin on
 
 
 """VIM airline""""""""""""""""""""""""""""""""
+Plugin 'vim-airline/vim-airline'
 let g:airline_powerline_fonts = 1
 Plugin 'vim-airline/vim-airline-themes'
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#left_sep = ' '
-let g:airline#extensions#tabline#left_alt_sep = '|'
+"let g:airline#extensions#tabline#left_sep = '|'
+"let g:airline#extensions#tabline#left_alt_sep = '|'"
+let g:airline#extensions#bufferline#enabled = 1
+let g:airline#extensions#bufferline#overwrite_variables = 1
+let g:airline#extensions#branch#enabled = 1
+let g:airline#extensions#syntastic#enabled = 1
+let g:airline_theme = 'solarized'
 """""""""""""""""""""""""""""""""""""""""""""""
